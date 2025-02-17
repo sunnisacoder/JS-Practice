@@ -42,6 +42,7 @@ console.log(typeof year);
 console.log(typeof null);//控制台說 null 是一個物件，但其實這是js的bug，他應該要返回 null 才對
 */
 
+/*
 let age = 25; // 用 let 創建的變量是可變的，like 歲數
 age = 26;
 
@@ -76,8 +77,21 @@ console.log(x);
 console.log(ageSunny > ageHannah); //false
 console.log(ageSunny >= 18); //是否成年 true
 
+*/
 
-// ========practice ======
+const now = 2025;
+const ageSunny = now - 1999;
+const ageHannah = now - 1991;
+
+let x, y;
+x = y = 10 + 2; //x=y=12, y=12, x=12
+console.log(x, y);
+
+
+
+
+//========practice ======
+/*
 const country = "Taiwan";
 const continent = "Asia";
 let population = "24";
@@ -96,13 +110,84 @@ console.log(population);
 console.log(population > 6);
 console.log(population <= 33);
 
-const description = 
-    country + 
-    ' is in ' + 
-    continent + 
-    ', and its '+
-    population + 
-    ' million people speak ' + 
-    language;
+// const description = 
+//     country + 
+//     ' is in ' + 
+//     continent + 
+//     ', and its '+
+//     population + 
+//     ' million people speak ' + 
+//     language;
 
-console.log(description);
+const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+
+console.log(description); 
+
+if (population > 33) {
+    console.log(`${country}'s population is above average`);
+}else{
+    console.log(`${country}'s population is ${33 - population} million below average`);
+}
+*/
+
+/*
+//======== Coding Challenge #1 ======
+// const markMass = 78;
+// const johnMass = 92;
+// const markHeight = 1.69;
+// const johnHeight = 1.95;
+
+const markMass = 95;
+const johnMass = 85;
+const markHeight = 1.88;
+const johnHeight = 1.75;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log( markBMI, johnBMI, markHigherBMI);
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`)
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
+}
+*/
+
+
+/*
+const firstName = 'Sunny';
+const job = 'enigneer';
+const year = 2025;
+const birthYear=1999;
+
+const sunny = "I'm "+firstName+', a '+(year - birthYear)+' years-old '+job+'!';
+console.log(sunny);
+const sunnyNew=`I'm ${firstName}, a ${year - birthYear} years-old ${job}!`;
+console.log(sunnyNew);
+console.log(`hi 
+hius`);
+*/
+
+/*
+const age = 15;
+
+if (age >= 18) {
+    console.log(`sunny can drive 💰`);
+} else {
+    const yearLeft = 18 - age;
+    console.log(`No you can't drive. wait for ${yearLeft} years ha`);
+}
+
+const birthYear = 1999;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21
+}
+console.log(century);
+*/
