@@ -87,9 +87,6 @@ let x, y;
 x = y = 10 + 2; //x=y=12, y=12, x=12
 console.log(x, y);
 
-
-
-
 //========practice ======
 /*
 const country = "Taiwan";
@@ -191,3 +188,74 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 */
+
+/*
+// type conversion
+const inputYear = '1999';
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
+
+console.log(Number('Sunny')); //not a number
+console.log(typeof NaN); //它還是一個數字，只是是一個無效的數字
+
+console.log(String(23), 23);
+
+//type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> '617'
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+*/
+
+////////////////////////////////////
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean({}));
+// console.log(Boolean(''));
+
+// const age = 18;
+// if (age === 18) console.log('adult strict');
+// if (age == 18) console.log('adult loose');
+
+// const fav = Number(prompt("what's your fav number?"));
+// console.log(fav);
+// console.log(typeof fav);
+
+// if (fav === 22) {
+//     console.log("22 is a number.");
+// } else if (fav === 7) {
+//     console.log("7 is a lucky nubmer");
+// } else {
+//     console.log("haha nice try.")
+// }
+
+// if (fav !== 22) console.log("why not 22");
+
+const numNeighbours = Number(prompt('How many neighbour countries does your contry have?'));
+
+// if (numNeighbours == 1) {
+//     console.log("Only 1 border!");
+// } else if(numNeighbours > 1) {
+//     console.log("More than 1 border");
+// }else{
+//     console.log("No borders");
+// }
+
+// 在未將 prompt 轉成數值，更換成 ===，輸入１時，變成 No borders
+if (numNeighbours === 1) {
+    console.log("Only 1 border!"); 
+} else if(numNeighbours > 1) {
+    console.log("More than 1 border");
+}else{
+    console.log("No borders");
+}
