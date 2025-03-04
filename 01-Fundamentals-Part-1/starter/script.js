@@ -217,39 +217,40 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 */
 
 ////////////////////////////////////
-// console.log(Boolean(0));
-// console.log(Boolean(undefined));
-// console.log(Boolean('Jonas'));
-// console.log(Boolean({}));
-// console.log(Boolean(''));
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
 
-// const age = 18;
-// if (age === 18) console.log('adult strict');
-// if (age == 18) console.log('adult loose');
+const age = 18;
+if (age === 18) console.log('adult strict');
+if (age == 18) console.log('adult loose');
 
-// const fav = Number(prompt("what's your fav number?"));
-// console.log(fav);
-// console.log(typeof fav);
+const fav = Number(prompt("what's your fav number?"));
+console.log(fav);
+console.log(typeof fav);
 
-// if (fav === 22) {
-//     console.log("22 is a number.");
-// } else if (fav === 7) {
-//     console.log("7 is a lucky nubmer");
-// } else {
-//     console.log("haha nice try.")
-// }
+if (fav === 22) {
+    console.log("22 is a number.");
+} else if (fav === 7) {
+    console.log("7 is a lucky nubmer");
+} else {
+    console.log("haha nice try.")
+}
 
-// if (fav !== 22) console.log("why not 22");
+if (fav !== 22) console.log("why not 22");
 
 const numNeighbours = Number(prompt('How many neighbour countries does your contry have?'));
 
-// if (numNeighbours == 1) {
-//     console.log("Only 1 border!");
-// } else if(numNeighbours > 1) {
-//     console.log("More than 1 border");
-// }else{
-//     console.log("No borders");
-// }
+if (numNeighbours == 1) {
+    console.log("Only 1 border!");
+} else if(numNeighbours > 1) {
+    console.log("More than 1 border");
+}else{
+    console.log("No borders");
+}
 
 // 在未將 prompt 轉成數值，更換成 ===，輸入１時，變成 No borders
 if (numNeighbours === 1) {
@@ -258,4 +259,69 @@ if (numNeighbours === 1) {
     console.log("More than 1 border");
 }else{
     console.log("No borders");
+}
+*/
+////////////////////////////////////
+const hasDriversLicense = true; //a
+const hasGoodVision = true; //b
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+    console.log("drive");
+} else {
+    console.log("dont drive");
+}
+
+const isTired = false; //c
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("drive 2");
+} else {
+    console.log("dont drive 2");
+}
+////////////////////////////////////
+/*
+There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. 
+The winner with the highest average score wins the a trophy!
+
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+
+3. BONUS 1: Include a requirement for a minimum score of 100.
+With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. 
+HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks. 😉
+
+4. BONUS 2: Minimum score also applies to a draw! 
+So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. 
+Otherwise, no team wins the trophy.
+
+TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+*/
+
+/*
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas) {
+    console.log("Koalas win the trophy");
+} else {
+    console.log("Both win the trophy");
+}
+*/
+
+const scoreDolphins = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 123) / 3;
+
+if(scoreDolphins > scoreKoalas){
+
+}else if(scoreDolphins < scoreKoalas){
+
 }
